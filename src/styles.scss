@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+ @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+ * {
+  margin:0;
+}
+#container1 {
+  overflow: hidden;
+}
+#container2 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: -15px;
+
+  overflow: auto;
+}
+ body {
+
+
+  overflow:hidden;
+}
+
+
+.view {
+  background: url("https://hdqwalls.com/download/blue-abstract-hd-p2-2048x1152.jpg")no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+}
+
+
+.navbar {
+  background-color: deepskyblue;
+  border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+}
+
+.top-nav-collapse {
+  background-color: transparent;
+  border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: transparent;
+    border-width: 0px;
+      -webkit-box-shadow: 0px 0px;
+      box-shadow: 0px 0px;
+  }
+}
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.list-inline{
+  display: inline;
+}
+.sign-b{
+  border-radius: 18px;
+ margin-left:10px;
+ color: #ffffff;
+}

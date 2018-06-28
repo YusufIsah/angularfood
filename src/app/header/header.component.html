@@ -1,0 +1,51 @@
+
+    <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+      <logo>
+        <a class="logo navbar-brand" href="#">
+          <strong>Navbar</strong>
+        </a>
+      </logo>
+      <links>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item  waves-light" mdbWavesEffect>
+            <a class="nav-link">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link">Link</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link">Profile</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+
+              <li class="nav-item dropdown " dropdown>
+
+                  <div class="dropdown" dropdown>
+                      <button dropdownToggle type="button" class="btn grey darken-4 btn-sm dropdown-toggle waves-light sign-b" mdbWavesEffect>
+                          Manage
+                      </button>
+
+                      <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Save Data</a>
+                          <a class="dropdown-item" href="#">Fetch Data</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="divider dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                  </div>
+
+              </li>
+              <li class="nav-item  waves-light">
+
+              <button mat-raised-button class="btn grey darken-4 waves-light sign-b" mdbWavesEffect >Login</button>
+              <button mat-raised-button class="btn grey darken-4 waves-light sign-b" mdbWavesEffect >Sign up</button>
+            </li>
+          </ul>
+
+      </links>
+    </mdb-navbar>
+
+  <!--Main Navigation-->
