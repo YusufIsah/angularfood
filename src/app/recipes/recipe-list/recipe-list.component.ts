@@ -10,9 +10,10 @@ export class RecipeListComponent implements OnInit {
 
   recipesList: RecipeModule[] = [
          new RecipeModule('Food is good', 'This is so simple to prepare!',
-         'https://upload.wikimedia.org/wikipedia/commons/7/7a/African_recipes.jpg'),
+         'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
          new RecipeModule('Food is good', 'This is so simple to prepare!',
-         'https://upload.wikimedia.org/wikipedia/commons/7/7a/African_recipes.jpg'),
+         'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
+
   ];
   constructor() { }
 
