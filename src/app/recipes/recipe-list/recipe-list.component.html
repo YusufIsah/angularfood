@@ -4,26 +4,10 @@
   </div>
 </div>
 <hr class="white">
-
-
 <div class="row" style="border-width: 0px; border-color: whitesmoke">
    <div class="col-xs-12">
-    <a href="#" class="list-group-item clearfix card white " *ngFor="let recipe of recipesList">
-
-          <div class="pull-left">
-
-              <h4 class="list-group-item-header">{{ recipe.name }}</h4>
-              <p class="list-group-item-text">
-               {{ recipe.description }}
-              </p>
-
-          </div>
-          <span class="pull-right">
-              <img class="img-responsive" style="max-height: 50px; margin-left: 30px" [src]="recipe.imagePath" alt="{{ recipe.name }}">
-          </span>
-       </a>
-
-      <app-recipe-item></app-recipe-item>
+      <app-recipe-item *ngFor="let recipeEl of recipesList" [recipe]="recipeEl"
+      (recipeSelected)="selectedRecipeEmitter(recipeEl)" ></app-recipe-item>
     </div>
 </div>
 

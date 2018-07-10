@@ -1,27 +1,35 @@
 
     <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
-      <logo>
-        <a class="logo navbar-brand" href="#">
-          <strong>Navbar</strong>
+      <logo class="nav-item  waves-light" mdbWavesEffect>
+        <a class="logo navbar-brand text-white" (click)="onSelect('recipe')">
+          <strong>Recipe Book</strong>
         </a>
       </logo>
       <links>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item  waves-light" mdbWavesEffect>
-            <a class="nav-link">Home
-              <span class="sr-only">(current)</span>
+            <a class="nav-link" (click)="onSelect('recipe')">
+             Recipes
             </a>
           </li>
           <li class="nav-item waves-light" mdbWavesEffect>
-            <a class="nav-link">Link</a>
+            <a class="nav-link" (click)="onSelect('shopping-list')">Shopping List</a>
           </li>
-          <li class="nav-item waves-light" mdbWavesEffect>
-            <a class="nav-link">Profile</a>
-          </li>
+
         </ul>
         <ul class="navbar-nav">
+            <div class="dropdown" dropdown>
+                <button dropdownToggle type="button" class="btn grey darken-4 btn-sm dropdown-toggle waves-light sign-b" mdbWavesEffect>
+                    Manage
+                </button>
 
-              <li class="nav-item dropdown " dropdown>
+                <div class="dropdown-menu dropdown-content">
+                    <a class="dropdown-item" href="#">Save Data</a>
+                    <a class="dropdown-item" href="#">Fetch Data</a>
+                </div>
+            </div>
+
+              <!-- <li class="nav-item dropdown " dropdown>
 
                   <div class="dropdown" dropdown>
                       <button dropdownToggle type="button" class="btn grey darken-4 btn-sm dropdown-toggle waves-light sign-b" mdbWavesEffect>
@@ -35,7 +43,7 @@
                       </div>
                   </div>
 
-              </li>
+              </li> -->
               <li class="nav-item  waves-light">
 
               <button mat-raised-button class="btn grey darken-4 waves-light sign-b" mdbWavesEffect >Login</button>

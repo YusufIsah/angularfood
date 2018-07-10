@@ -1,3 +1,4 @@
+import { RecipeModule } from './recipe/recipe.module';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipes.component.scss']
 })
 export class RecipesComponent implements OnInit {
-
+  selectedRecipeClick: RecipeModule;
   constructor() { }
 
   ngOnInit() {

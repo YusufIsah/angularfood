@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  currentNav = 'recipe';
+  navChange(selectCurrentNav: string) {
+    this.currentNav = selectCurrentNav;
+  }
 }
 
 

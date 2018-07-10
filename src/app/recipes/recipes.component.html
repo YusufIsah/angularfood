@@ -1,10 +1,14 @@
 <div class="row" style="color:#fff;">
   <div class="col-md-5">
-    <app-recipe-list></app-recipe-list>
+    <app-recipe-list (recipeWasSelected)="selectedRecipeClick = $event"></app-recipe-list>
   </div>
   <div class="col-md-7">
-    <app-recipe-detail>
-
+    <app-recipe-detail *ngIf="selectedRecipeClick; else infoText"
+    [recipe]="selectedRecipeClick">
+    <!-- <img src="/src//assets/images/recipe-images/Recipe_logo.jpeg" alt=""> -->
     </app-recipe-detail>
+    <ng-template #infoText>
+        Please select a recipe
+      </ng-template>
   </div>
 </div>
