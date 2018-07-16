@@ -1,3 +1,5 @@
+import { ShoppingserviceService } from './shared/services/shoppingservice.service';
+import { RecipeserviceService } from './shared/services/recipeservice.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
@@ -149,7 +151,7 @@ MDBBootstrapModule.forRoot(),
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   bootstrap: [AppComponent],
-  providers: []
+  providers: [RecipeserviceService, ShoppingserviceService]
 })
 
 export class AppModule {}

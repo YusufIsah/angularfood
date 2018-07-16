@@ -6,8 +6,9 @@
 <hr class="white">
 <div class="row" style="border-width: 0px; border-color: whitesmoke">
    <div class="col-xs-12">
-      <app-recipe-item *ngFor="let recipeEl of recipesList" [recipe]="recipeEl"
-      (recipeSelected)="selectedRecipeEmitter(recipeEl)" ></app-recipe-item>
+      <app-recipe-item *ngFor="let recipeEl of recipesList"
+       [recipe]="recipeEl"
+       ></app-recipe-item>
     </div>
 </div>
 
